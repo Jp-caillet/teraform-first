@@ -110,7 +110,7 @@ resource "aws_db_instance" "default" {
 
 //servers.tf
 resource "aws_instance" "test-ec2-instance" {
-  ami             = "ami-03a3e7464acef645e"
+  ami             = ""
   instance_type   = "t2.micro"
   key_name        = "jpKey"
   security_groups = ["${aws_security_group.ingress-all-test.id}"]

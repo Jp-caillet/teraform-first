@@ -1,0 +1,10 @@
+[Unit]
+Description=ursho service
+
+[Service]
+Type=simple
+WorkingDirectory=/bin
+ExecStart=/bin/ursho
+
+[Install]
+WantedBy=multi-user.target
